@@ -38,14 +38,52 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SafeArea(
-        child: Center(
-            child: TextButton(
-          child: const Text("Click me"),
-          onPressed: () {
-            final player = AudioCache();
-            player.play('note1.wav');
-          },
-        )),
+        child: Column(
+          children: [
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note1.wav');
+              },
+            ),
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note2.wav');
+              },
+            ),
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note3.wav');
+              },
+            ),
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note4.wav');
+              },
+            ),
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note5.wav');
+              },
+            ),
+            TextButton(
+              child: const Text("Click me"),
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note6.wav');
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
